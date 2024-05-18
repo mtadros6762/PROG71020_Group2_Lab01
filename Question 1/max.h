@@ -5,14 +5,28 @@
 #ifndef MAX_CLASS_H
 #define MAX_CLASS_H
 
-typedef class max {
-private:
+//LIBRARIES AND MACROS
+#include <iostream>
+#define ARRAY_LENGTH 5
+
+class maxClass {
+	//Data
+	int a;
+	int b;
+	int c;
+	int arrayOne[ARRAY_LENGTH];
+	int arrayTwo[ARRAY_LENGTH];
 
 public:
 	//Constructors
+	//maxClass();
 
-	//
 
-}MAX;
+	//Functions
+	int max(int a, int b);
+	int max(int a, int b, int c);
+	//int max(int arrayOne[], int);
+
+};
 
 #endif //MAX_CLASS_H

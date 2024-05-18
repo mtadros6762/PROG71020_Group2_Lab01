@@ -12,7 +12,7 @@
 //b. Can you add another third function that has the same name and
 //has two arguments: multiply(int, int) and call it as follows
 //multiply(2, 3)? Why or why not?
-//.....
+//This is not possible
 //.....
 
 //c. Test your functions using the main function code. Do not change the
