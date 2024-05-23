@@ -1,6 +1,5 @@
 #include"swap.h"
 
-
 //prog71020 - madisont, adilf, armaanm - group2 - lab01, q2 - source code
 
 //Write a void function called swap that swaps two int variables passed to it.
@@ -15,7 +14,7 @@ int main() {
 
 	// ** Question-2 **
 
-	cout << "\nQuestion-2:" << endl;
+	cout << "Question-2:" << endl;
 
 	int num1 = 12;
 	int num2 = 51;

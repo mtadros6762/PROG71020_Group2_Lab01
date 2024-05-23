@@ -7,7 +7,7 @@ int multiply(int a, int b, int c) {
 	return a * b * c;
 }
 
-//Function tp multiply two doubles
+//Function to multiply two doubles
 double multiply(double a, double b) {
 	return a * b;
 }

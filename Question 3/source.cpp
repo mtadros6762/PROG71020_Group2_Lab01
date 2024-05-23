@@ -1,5 +1,5 @@
-#include <iostream>
-#include"Location.h"
+#include"location.h"
+
 //prog71020 - madisont, adilf, armaanm - group2 - lab01, q3 - source code
 
 //Use the function overloading to write a function called swap that
@@ -15,7 +15,7 @@ int main() {
 
 	// ** Question-3 **
 
-	cout << "\nQuestion-3:" << endl;
+	cout << "Question-3:" << endl;
 	
 	Location location1;
 	location1.latitude = 25;
