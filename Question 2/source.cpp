@@ -1,5 +1,5 @@
-#include <iostream>
-#define ARRAY_LENGTH 5
+#include"swap.h"
+
 
 //prog71020 - madisont, adilf, armaanm - group2 - lab01, q2 - source code
 
@@ -21,11 +21,11 @@ int main() {
 	int num2 = 51;
 
 	cout << "Before using the pointer swap function   " << "num1 = " << num1 << ", " << "num2 = " << num2 << endl;
-	swap(&num1, &num2);
+	Swap(&num1, &num2);
 	cout << "After using the pointer swap function    " << "num1 = " << num1 << ", " << "num2 = " << num2 << ". " << endl;
 
 	cout << "Before using the reference swap function " << "num1 = " << num1 << ", " << "num2 = " << num2 << endl;
-	swap(num1, num2);
+	Swap(num1, num2);
 	cout << "After using the reference swap function  " << "num1 = " << num1 << ", " << "num2 = " << num2 << ". " << endl;
 
 	return 0;
