@@ -1,55 +1,58 @@
 #include "max.h"
 
-//prog71020 - madisont, adilf, armaanm - group2 - lab01, q1 - max class implementation
-
-using namespace std;
-
-//Constructors
+//prog71020 - madisont, adilf, armaanm - group2 - lab01, q1 - max implementation
 
 //Function to find the max of two ints
-int maxClass::max(int a, int b) {
+int max(int a, int b) {
 
-	int max = 0;
-
-	if (a > b) {
+	int max = a;
+	
+	//Comparing values to find max
+	if (b > max) {
 		max = a;
 	}
-	else {
-		max = b;
-	}
-
 	return max;
 }
 
 //Function to find the max of three ints
-int maxClass::max(int a, int b, int c) {
+int max(int a, int b, int c) {
 
-	int max = 0;
+	int max = a;
 
 	//Comparing values to find max
-	if (a > b && a > c) {
-		max = a;
-	}
-	else if (b > a && b > c) {
+	if (b > max) {
 		max = b;
 	}
-	else if (c > a && c > b) {
+	if (c > max) {
 		max = c;
 	}
-
 	return max;
 }
 
-//int maxClass::max(int arrayOne[], int sizeofarray) {
-//
-//	int max = 0;
-//
-//
-//
-//	return max;
-//}
+//Function to find the max element in an array
+int max(int array[]) {
 
-//maxClass::ostream& operator<<(maxClass::ostream& os, const maxClass& t) {
-//	os << t.direction << '/' << t.loading_time << '/' << t.crossing_time;
-//	return os;
-//}
+	int max = array[0];
+	int length = sizeof(array) / sizeof(array[0]);
+
+	for (int i = 0; i < length; i++) {
+		//Compare elements of array with the max
+		if (array[i] > max) {
+			max = array[i];
+		}
+	}
+	return max;
+}
+
+//Function to find the max element in two arrays
+int max(int arrayOne[], int arrayTwo[]) {
+
+	int maxNum = max(arrayOne);	//Set maxNum to the max of the first array
+	int twoMax = max(arrayTwo);	//Find max of the second array
+
+	//Compare the max numbers of the two arrays
+	if (twoMax > maxNum) {
+		maxNum = twoMax;
+	}
+	return maxNum;
+}
