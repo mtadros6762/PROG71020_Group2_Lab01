@@ -33,7 +33,7 @@ int max(int a, int b, int c) {
 int max(int array[]) {
 
 	int max = array[0];
-	int length = sizeof(array) / sizeof(array[0]);
+	int length = sizeof(array);
 
 	for (int i = 0; i < length; i++) {
 		//Compare elements of array with the max
